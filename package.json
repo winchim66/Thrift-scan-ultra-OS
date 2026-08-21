@@ -1,0 +1,41 @@
+{
+  "name": "thrift-scan-ultra",
+  "version": "1.0.0",
+  "description": "Revolutionary AR-powered thrift store scanner with real-time item identification and jewelry authentication",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,scss,json}\"",
+    "backend:dev": "python -m uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000",
+    "backend:build": "pip install -r backend/requirements.txt"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@tensorflow/tfjs": "^4.15.0",
+    "@tensorflow/tfjs-backend-webgpu": "^4.15.0",
+    "@google/generative-ai": "^0.11.0",
+    "idb": "^8.0.0",
+    "axios": "^1.6.0",
+    "zustand": "^4.4.0",
+    "framer-motion": "^10.16.0",
+    "clsx": "^2.0.0",
+    "sass": "^1.69.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0",
+    "prettier": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.0.0"
+  }
+}
